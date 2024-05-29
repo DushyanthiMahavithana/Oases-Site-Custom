@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oases Education</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+      
+      @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+      :root {
+          --light-blue: #1e6690;
+          --dark-blue: #183062;
+          --yellow: #fdc308;
+          --black: #000000;
+          --white: #ffffff;
+          --font-15: 15px;
+          --font-18: 18px;
+          --font-45: 45px;
+          --line-height-32: 32px;
+          --line-height-52: 52px;
+          --line-height-72: 72px;
+          --font-weight-250: 250px;
+          --font-weight-500: 500;
+          --header-menu-font: 'Hanken Grotesk';
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+      }
+
+      .top-header {
+          font-size: var(--font-18);
+          line-height: var(--line-height-32);
+          color: var(--light-blue);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+      }
+
+      .top-header .contact-info span {
+          margin-right: 20px;
+      }
+
+      .top-bar-yellow-box {
+          width: 210px;
+          height: 65px;
+          border-radius: 10px;
+          background-color: var(--yellow);
+          display: flex; 
+          justify-content: center; 
+          align-items: center; 
+          color: var(--black);
+          font-weight: var(--font-weight-500);
+          font-family: var(--header-menu-font);
+          text-decoration: none;
+      }
+
+      .header-bar {
+          max-width: 1410px;
+          height: 65px;
+          border-radius: 10px;
+          background-color: var(--light-blue);
+          position: relative;
+          margin: 0 auto;
+          top: -75px;
+          z-index: 0;
+          align-content: center;
+         
+      }
+
+      .logo {
+          width: 210px;
+          height: 174px;
+          border-radius: 10px;
+          background-color: #ffffff;
+          position: relative;
+          z-index: 1;
+          margin-right: 50px;
+      }
+
+      .header-font-styles {
+          font-size: var(--font-15);
+          line-height: var(--line-height-32);
+          text-transform: uppercase;
+          color: var(--white);
+          font-weight: var(--font-weight-500);
+          font-family: var(--header-menu-font);
+      }
+
+      .header-font-styles:hover,
+      .header-font-styles.active,
+      .header-font-styles:active {
+          color: var(--yellow);
+      }
+
+      .main-header {
+          border-bottom: 1px solid #ddd;
+      }
+
+      nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      nav ul li {
+          display: inline;
+          margin-right: 20px;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+      }
+
+      .footer-big-header{
+        font-size: var(--font-45);
+        line-height: var(--line-height-72);
+        color: var(--black);
+        font-weight: var(--font-weight-250);
+        font-family: var(--header-menu-font);
+      }
+      .footer-bold{
+        font-size: var(--font-18);
+        line-height: var(--line-height-52);
+        color: var(--dark-blue);
+        font-weight: var(--font-weight-500);
+        font-family: var(--header-menu-font);
+      }
+
+    </style>
+</head>
+<body>
+  <!-- Header Section -->
+<header>
+  <div class="container">
+      <div class="row top-header">
+          <div class="col-lg-3 d-flex justify-content-end">
+              <img src="images/images.jpeg" class="logo">
+          </div>
+          <div class="col-lg-9 d-flex justify-content-end align-items-center contact-info">
+              <span><i class="fas fa-envelope" style="font-weight: 100;"></i> info@oasesedu.com</span>
+              <span><i class="fas fa-phone fa-flip-horizontal"></i> 077 325 7575</span>
+              <a href="#" class="top-bar-yellow-box">Get Started</a>
+          </div>
+      </div>
+      <div class="row py-3 main-header header-bar">
+          <div class="col-lg-12 d-flex justify-content-end">
+              <nav class="navbar navbar-expand-md">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavRight">
+                      <ul class="navbar-nav">
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Home</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">About Us</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Destinations</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Partners</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Services</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Gallery</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Events</a></li>
+                          <li class="nav-item"><a class="nav-link header-font-styles" href="#">Contact Us</a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+
+
+   <!-- Footer Section -->
+   <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/images.jpeg" class="logo">
+          <h2 class="footer-big-header">We're here to help</h2>
+          <p class="footer-bold">No: 101, 2nd Floor, Colombo Road, Kurunegala, 60000, Sri Lanka</p>
+          <p class="footer-bold">Branches: No: 57/1, Sri Lanka, Colombo 03</p>
+          <div class="social-icons">
+            <a href="#" class="mr-2"><i class="fab fa-facebook" style="color: var(--black);"></i></a>
+            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="mr-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class=""><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">About us</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact & Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">FAQs</a></li>
+            <li><a href="#" class="text-white">info@oasesedu.com</a></li>
+            <li><a href="#" class="text-white">Kurunegala: 037 316 1002</a></li>
+            <li><a href="#" class="text-white">Colombo: 011 586 1001</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>&copy; 2023 OASES Educational Services (Pvt) Ltd. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      
+        
+  </body>
+  </html>
