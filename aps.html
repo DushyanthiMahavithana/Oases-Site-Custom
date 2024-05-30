@@ -14,11 +14,14 @@
 
       :root {
           --light-blue: #1e6690;
+          --tint-blue: #0084ce;
           --dark-blue: #183062;
+          --darkened-blue:#172f60; /*new footer*/
           --yellow: #fdc308;
           --black: #000000;
           --white: #ffffff;
           --font-15: 15px;
+          --font-16: 16px; /*new footer*/
           --font-18: 18px;
           --font-45: 45px;
           --line-height-32: 32px;
@@ -29,9 +32,7 @@
           --header-menu-font: 'Hanken Grotesk';
       }
 
-      body {
-          font-family: Arial, sans-serif;
-      }
+      
 
       .top-header {
           font-size: var(--font-18);
@@ -125,6 +126,35 @@
         font-weight: var(--font-weight-250);
         font-family: var(--header-menu-font);
       }
+      .footer-small{
+        font-size: var(--font-16);
+        line-height: var(--line-height-32);
+        
+        font-weight: var(--font-weight-500);
+        font-family: var(--header-menu-font);
+        
+      }
+      .footer-bar-text{
+        font-size: var(--font-16);
+        line-height: var(--line-height-32);
+        color: var(--tint-blue);
+        font-weight: var(--font-weight-500);
+        font-family: var(--header-menu-font);
+
+      }
+      .footer-small a{
+        text-decoration: none;
+        color: var(--dark-blue);
+      }
+
+      .footer-sub-header{
+        font-size: var(--font-18);
+        line-height: var(--line-height-72);
+        text-transform: uppercase;
+        color: var(--dark-blue);
+        font-weight: var(--font-weight-500);
+        font-family: var(--header-menu-font);
+      }
       .footer-bold{
         font-size: var(--font-18);
         line-height: var(--line-height-52);
@@ -132,6 +162,48 @@
         font-weight: var(--font-weight-500);
         font-family: var(--header-menu-font);
       }
+      .social-icons i {
+         font-size: 1.5em; 
+         margin-right: 0.5rem;
+         
+  
+      }
+      .social-icons a {
+        text-decoration: none;
+      }
+      .social-icons{
+        display: flex;
+        
+      }
+      .icon-style i {
+        background-color: black;
+        color: white; 
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  border-radius: 50%;     /* Make the border round */
+  padding: 7px;          /* Adjust padding to control the size of the border area */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */ 
+}
+
+.footer-bar{
+
+max-width: 1920px;
+height: 155px;
+background-color: var(--darkened-blue);
+margin-top: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+
+      
+    
 
     </style>
 </head>
@@ -178,37 +250,49 @@
    <footer class="py-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-12">
           <img src="images/images.jpeg" class="logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
           <h2 class="footer-big-header">We're here to help</h2>
           <p class="footer-bold">No: 101, 2nd Floor, Colombo Road, Kurunegala, 60000, Sri Lanka</p>
           <p class="footer-bold">Branches: No: 57/1, Sri Lanka, Colombo 03</p>
-          <div class="social-icons">
-            <a href="#" class="mr-2"><i class="fab fa-facebook" style="color: var(--black);"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class=""><i class="fab fa-twitter"></i></a>
+          <div class="social-icons icon-style">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-        <div class="col-md-3">
-          <h5>Company</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">About us</a></li>
-            <li><a href="#" class="text-white">Blog</a></li>
+        <div class="col-lg-3">
+          <h5 class="footer-sub-header">Company</h5>
+          <ul class="list-unstyled footer-small">
+            <li><a href="#" >About us</a></li>
+            <li><a href="#" >Blog</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <h5>Contact & Support</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">FAQs</a></li>
-            <li><a href="#" class="text-white">info@oasesedu.com</a></li>
-            <li><a href="#" class="text-white">Kurunegala: 037 316 1002</a></li>
-            <li><a href="#" class="text-white">Colombo: 011 586 1001</a></li>
+        <div class="col-lg-3" style="display: flex; flex-direction: column; align-items: flex-end;">
+          <h5 class="footer-sub-header">Contact & Support</h5>
+          <ul class="list-unstyled footer-small">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#" >info@oasesedu.com</a></li>
+            <li><a href="#" >Kurunegala +37 316 1002</a></li>
+            <li><a href="#" >Colombo +11 586 1001</a></li>
           </ul>
         </div>
       </div>
-      <div class="text-center mt-3">
-        <p>&copy; 2023 OASES Educational Services (Pvt) Ltd. All Rights Reserved</p>
+      <div class="row footer-bar">
+        <div class="col-lg-6">
+          <p class="footer-bar-text">Privacy & Cookie Policy<br><span style="color: var(--white);">&copy; 2023 OASES Educational Services (Pvt) Ltd. All Rights Reserved</span></p>
+         
+        </div>
+        <div class="col-lg-6" style="text-align: right;">
+          <p class="footer-bar-text" style="color: var(--white);">Designed & Developed by <br><span class="footer-bar-text">Media Horizon</span></p>
+
+        </div>
+
       </div>
     </div>
   </footer>
