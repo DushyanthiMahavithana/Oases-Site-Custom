@@ -23,6 +23,7 @@
           --font-15: 15px;
           --font-16: 16px; /*new footer*/
           --font-18: 18px;
+          --font-32: 32px;
           --font-45: 45px;
           --line-height-32: 32px;
           --line-height-52: 52px;
@@ -199,8 +200,35 @@ justify-content: space-between;
 align-items: center;
 }
 
+.overlay-heading{
+  position: absolute;
+  top: 200;
+    
+}
 
+.sub-heading{
+		font-size: var(--font-32);
+          line-height: var(--line-height-72);
+          color: var(--black-blue);
+          font-weight: var(--font-weight-500);
+          font-family: var(--header-menu-font);
+	}
 
+  .main-heading{
+		font-size: var(--font-45);
+          line-height: var(--line-height-52);
+          color: var(--black);
+          font-weight: var(--font-weight-250);
+          font-family: var(--header-menu-font);
+	}
+
+  p {
+          font-size: var(--font-18);
+          line-height: var(--line-height-32);
+          color: var(--black);
+          font-weight: var(--font-weight-250);
+          font-family: var(--header-menu-font);
+      }
 
       
     
@@ -244,6 +272,22 @@ align-items: center;
       </div>
   </div>
 </header>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8">
+              <p class="sub-heading">Oases Education</p>
+              <h3 class="overlay-heading main-heading">Pioneers in overseas education for over a decade,<br> we take pride in <span>guiding the future generations</span> of the <br> nation to be armed in innovative knowledge provided<br> by the world's top universities.</h3>
+              <p style="margin-top: 300px;">Pellentesque accumsan congue turpis, et accumsan massa. Nam rhoncus, purus nec vulputate gravida, mi diam imperdiet leo, a tincidunt odio elit at lectus. Donec pulvinar maximus leo eget tristique. Aenean vestibulum neque ut metus aliquet, vel semper justo ornare. Donec nec molestie nibh. Quisque ut rutrum nibh, ac facilisis tellus. Phasellus vitae neque at elit aliquet euismod. Aliquam et pulvinar odio. Phasellus fermentum et mauris in rutrum.</p>
+          </div>
+          <div class="col-lg-4">
+              <img src="images/Layer 7.png"  style="width: 100%; max-width: 770px; height: 513px; object-fit: cover; border-radius: 10px;"  alt="Oases Education">
+           
+          </div>
+      </div>
+  </div>
+</section>
 
 
    <!-- Footer Section -->
