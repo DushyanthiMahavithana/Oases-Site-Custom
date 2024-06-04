@@ -329,6 +329,30 @@ align-items: center;
       width: 20%;
     }
 
+    /*--dropdown-menu*/
+    .dropdown-menu{
+      --bs-dropdown-link-active-bg: var(--yellow);
+      --bs-dropdown-link-active-color: var(--black);
+      --bs-dropdown-link-hover-bg: var(--yellow);
+      --bs-dropdown-bg:none;
+      --bs-dropdown-border-width:none;
+
+    }
+    .dropdown-font{
+      font-size: var(--font-15);
+      line-height: var(--line-height-32);
+      color: var(--black);
+      font-weight: var(--font-weight-500);
+      font-family: var(--header-menu-font);
+    }
+    /* Show the dropdown on hover */
+   .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute; 
+    background-color: #fff; 
+    
+}
+
     </style>
 </head>
 <body>
@@ -355,8 +379,8 @@ align-items: center;
                       <ul class="navbar-nav">
                           <li class="nav-item"><a class="nav-link header-font-styles" href="#">Home</a></li>
                           <li class="nav-item"><a class="nav-link header-font-styles" href="#">About Us</a></li>
-                          <li class="nav-item"><a class="nav-link header-font-styles dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinations</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li class="nav-item dropdown"><a class="nav-link header-font-styles dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinations</a>
+                            <div class="dropdown-menu dropdown-font" aria-labelledby="dropdownMenuLink">
                               <a class="dropdown-item" href="#">Action</a>
                               <a class="dropdown-item" href="#">Another action</a>
                               <a class="dropdown-item" href="#">Something else here</a>
